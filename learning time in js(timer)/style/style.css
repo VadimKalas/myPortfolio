@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe7cc;
+}
+
+.timer__container {
+  width: 40%;
+  height: 100%;
+  margin: 150px auto;
+}
+
+.timer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer__block {
+  width: 190px;
+  height: 200px;
+  background-color: #ff9500;
+  font-size: 120px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0 0 20% 20%;
+}
+
+.hours::before {
+  content: "Hours";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.minutes::before {
+  content: "Minutes";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.seconds::before {
+  content: "Seconds";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.milliseconds::before {
+  content: "Milliseconds";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.button__row {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
