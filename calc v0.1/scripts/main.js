@@ -1,3 +1,4 @@
+import addThemeSwither from "./themeSwicher.js";
 //не работает последовательно несколько команд. например, 5*3-2 вернёт 1.
 
 const buttons = document.querySelectorAll(".button");
