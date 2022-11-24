@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
   user-select: none;
-  overflow: auto;
 }
 body {
   background-color: #4158d0;
@@ -60,15 +59,20 @@ body {
   max-width: 100%;
   display: flex;
   padding: 5px 10px;
-  flex-grow: 0;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff4d;
   border-radius: 5px;
   margin: 0 5px 5px 5px;
+  padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .todo__item-button {
-  width: 2em;
-  height: 2em;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.todo__item-text {
+  flex-grow: 0;
 }

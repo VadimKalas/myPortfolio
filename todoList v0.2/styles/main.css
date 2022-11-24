@@ -5,7 +5,6 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  overflow: auto;
 }
 
 body {
@@ -63,15 +62,21 @@ body {
   max-width: 100%;
   display: flex;
   padding: 5px 10px;
-  flex-grow: 0;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.3019607843);
   border-radius: 5px;
   margin: 0 5px 5px 5px;
+  padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .todo__item-button {
-  width: 2em;
-  height: 2em;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.todo__item-text {
+  flex-grow: 0;
 }/*# sourceMappingURL=main.css.map */
