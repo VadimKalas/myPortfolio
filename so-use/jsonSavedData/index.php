@@ -17,14 +17,13 @@
   </head>
   <body>
   <?php          
-    include('./parcer.php')
+    // include('./parcer.php')
   ?>
     <div class="container">
       <div class="slider__wrapper">
-        <!-- //////////////////////////////////////////////////////////////// -->
         <div class="slider__item">
           <div class="item__photo">
-            
+            Фото
           </div>
           <div class="item__info">
             <div class="item__title">
@@ -39,7 +38,6 @@
           ></a>
         </div>
         
-        <!-- //////////////////////////////////////////////////////////////// -->
         <div class="slider__item">
           <div class="item__photo">
             

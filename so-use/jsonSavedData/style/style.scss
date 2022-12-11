@@ -17,8 +17,6 @@ body {
   box-shadow: 3px 3px 4px 0px grey;
   margin: 10px 10px;
 }
-.item__photo {
-}
 .item__photo img {
   width: 100%;
   height: auto;
@@ -33,21 +31,16 @@ body {
   margin-bottom: 5px;
 }
 .item__about {
+  width: 100%;
   color: rgb(75, 75, 75);
   p {
-    padding: 0;
-    margin: 0;
-    color: rgb(106, 106, 106);
+    display: block;
+    margin: 0px 10px 10px 0px;
+  }
+  p:nth-last-child(2) {
+    color: red;
     span {
-      color: black;
-      font-size: 1.1rem;
-    }
-    &:nth-child(9) {
-      span {
-        color: red;
-        font-weight: 700;
-        font-size: 1.3rem;
-      }
+      font-size: 1.2rem;
     }
   }
 }

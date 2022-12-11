@@ -14,12 +14,7 @@
         $itemSpan = $itemAbout->find('span');
         array_push($result, $itemAbout->text, $itemSpan->text);
     }
-
+fopen('parsed-data.json', 'w');
     file_put_contents('parsed-data.json', json_encode($result));
-
-    // $resultStr = implode(';', $result);
-    // $file = fopen('parsed-data2.json', 'w');
-    // fwrite($file, $resultStr);
-    // fclose($file);  
    
     ?>

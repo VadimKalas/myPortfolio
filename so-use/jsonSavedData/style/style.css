@@ -38,21 +38,18 @@ body {
 }
 
 .item__about {
+  width: 100%;
   color: rgb(75, 75, 75);
 }
 .item__about p {
-  padding: 0;
-  margin: 0;
-  color: rgb(106, 106, 106);
+  display: block;
+  margin: 0px 10px 10px 0px;
 }
-.item__about p span {
-  color: black;
-  font-size: 1.1rem;
-}
-.item__about p:nth-child(9) span {
+.item__about p:nth-last-child(2) {
   color: red;
-  font-weight: 700;
-  font-size: 1.3rem;
+}
+.item__about p:nth-last-child(2) span {
+  font-size: 1.2rem;
 }
 
 .item__button {

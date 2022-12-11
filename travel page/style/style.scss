@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  margin: 0;
+}
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+.header {
+  width: 100vw;
+  letter-spacing: 1.1px;
+}
+.covid__banner {
+  display: flex;
+  width: 100%;
+  background-color: rgb(213, 241, 219);
+  text-align: center;
+  cursor: pointer;
+  p {
+    margin: 0;
+    line-height: 2.5;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 600;
+  }
+  span {
+    color: rgb(71, 170, 71);
+  }
+}
+///////////////////////////////////////////////Выпадающий список и ссылки.
+.header__navbar {
+  width: 100%;
+  background-color: rgb(88, 88, 88);
+  line-height: 2.5;
+  color: white;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+
+    li {
+      float: left;
+      padding: 0px 8px;
+      cursor: pointer;
+      transition: all 0.1s linear;
+    }
+    li:hover {
+      color: rgb(255, 182, 45);
+    }
+    li:has(ul) {
+      position: relative;
+    }
+    li:has(ul):hover .header__navlinks-list-more {
+      z-index: 1;
+      display: block;
+    }
+  }
+}
+.header__navlinks-list-more {
+  display: none;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+}
+.header__navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__navlinks-list {
+}
+.header__links {
+  height: 100%;
+}
+.header__links a {
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+  &:last-child {
+    background-color: rgb(0, 132, 255);
+    height: 100%;
+    padding: 0px 10px;
+  }
+}
+.main {
+}
+.footer {
+}

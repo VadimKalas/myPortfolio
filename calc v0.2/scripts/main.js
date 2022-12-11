@@ -7,6 +7,13 @@ let result = document.querySelector(".result");
 let numberInMemory = 0;
 let actionInMemory = "";
 
+const checkFor0102 = function () {
+  if (result.innerHTML === "0.30000000000000004") {
+    //result.innerHTML.slice(-6);
+    console.log("Много цифар");
+  }
+};
+
 for (let i = 0; i < buttons.length; i++) {
   let button = buttons[i];
   button.addEventListener("click", function (e) {
@@ -75,9 +82,7 @@ for (let i = 0; i < buttons.length; i++) {
       }
     }
 
-    if (result.innerHTML.length > 9) {
-      result.innerHTML.toFixed(9);
-    }
     result.innerHTML += button.innerHTML;
+    checkFor0102();
   });
 }
